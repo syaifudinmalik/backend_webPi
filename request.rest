@@ -1,0 +1,29 @@
+GET http://127.0.0.1:5000/users
+
+###
+GET http://127.0.0.1:5000/users/660cc83d0e5531f81e0919d9
+###
+POST http://127.0.0.1:5000/users
+Content-Type: application/json
+
+{
+    "nama":"Risma",
+    "email":"risma55@gmail.com",
+    "gender":"Female",
+    "alamat":"Padhangan"
+}
+
+###
+PATCH http://127.0.0.1:5000/users/660ccc3f624d82075f064de9
+Content-Type: application/json
+
+{
+    "nama":"Karisma Fidiya",
+    "email":"risma551@gmail.com",
+    "gender":"Female",
+    "alamat":"Padangan"
+}
+
+###
+DELETE  http://127.0.0.1:5000/users/660cc83d0e5531f81e0919d9
+
